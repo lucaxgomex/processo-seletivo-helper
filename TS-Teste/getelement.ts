@@ -1,19 +1,27 @@
 class Sum {
-  constructor(public i: number, public j: number) {}
+  //Inicializacao com dois atributos	
+  constructor(public i: string, public j: string) {}
+
+  //Metodo para realizar a soma
   greet() {
     return(this.i + this.j);
   }  
 }
-
+/*
 var button = document.createElement("button");
-button.innerText = "SUM";
 
-button.onclick = function() {
-  var v = parseFloat((<HTMLInputElement>document.getElementById("Text1")).value);
-  var v1 = parseFloat((<HTMLInputElement>document.getElementById("Text2")).value);
-  var v2 = new Sum(v, v1);
-  
-  window.alert(v2.greet().toString());
-}
+button.innerText = "Get the sum";
 
 document.body.appendChild(button);
+
+button.onclick = () => 
+
+*/
+function realizaSoma(): void {
+  var element1 = (<HTMLInputElement>document.getElementById("Text1")).value;
+  var element2 = (<HTMLInputElement>document.getElementById("Text2")).value;
+
+  var s = new Sum(element1, element2); //Instancia objeto
+  
+  window.alert(s.greet().toString()); //Mostrar resultado
+}
