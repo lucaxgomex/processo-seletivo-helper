@@ -6,6 +6,7 @@
 	<title>Cadastre-se!</title>
 	<link rel="stylesheet" type="text/css" href="../src/style.css">
 	<script type="text/javascript" src="../src/index.js"></script>
+	<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
 </head>
 <body>
 	<section>
@@ -20,7 +21,7 @@
 			<input type="text" id="Bairo" placeholder="Bairo: " required>
 			<input type="text" id="Cidade" placeholder="Cidade: " required>
 			<input type="text" id="Estado" placeholder="Estado: " required>
-			<button type="submit" onclick="" ="submeteDados()">Submeter</button>
+			<button onclick="submeteDados()" onsubmit="pare(evento)">Submeter</button>
 		</form>
 	</section>
 </body>
