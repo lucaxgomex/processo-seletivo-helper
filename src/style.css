@@ -1,0 +1,43 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--background: #E5FFB3;
+  	--background-accent: #DBF8A3;
+  	--background-accent-2: #BDE66E;
+  	--light: #aeea0a;
+  	--dark: #69BC22;
+  	--text: #ffffff;
+}
+
+section {
+	display: block;
+	width: 400px;
+	margin: 0 auto 0 auto;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 30vh;
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: var(--light);
+  width: 400px;
+  height: 70px;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+  background-size: 100% 100%;
+  box-shadow: 0 0 0 7px var(--light) inset;
+  margin-bottom: 15px;
+}
