@@ -35,6 +35,14 @@ function submeteDados(): void {
 		cidade,
 		estado
 	];
+/*
+	const fs = require('fs');
+
+	fs.writeFile('dadosClientes.txt', dados, (error) => {
+		if (error) throw err;
+		
+	});
+*/	
 
 	window.alert("Cadastro realizado com sucesso!");
 }

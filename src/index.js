@@ -13,8 +13,25 @@ function submeteDados() {
     var bairro = document.getElementById("Bairro").value;
     var cidade = document.getElementById("Cidade").value;
     var estado = document.getElementById("Estado").value;
+    var dados = [
+        nome,
+        email,
+        cpf$cnpj,
+        telefone,
+        cep,
+        logradouro,
+        numero,
+        bairro,
+        cidade,
+        estado
+    ];
     /*
-        Arquivo JSON
+        const fs = require('fs');
+    
+        fs.writeFile('dadosClientes.txt', dados, (error) => {
+            if (error) throw err;
+            
+        });
     */
     window.alert("Cadastro realizado com sucesso!");
 }
